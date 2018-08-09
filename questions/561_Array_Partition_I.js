@@ -15,13 +15,13 @@ All the integers in the array will be in the range of [-10000, 10000].
  * @param {number[]} nums
  * @return {number}
  */
-var arrayPairSum = function(nums) {
+var arrayPairSum = function (nums) {
     var sum = 0;
-    nums.sort(function(a,b){
-        return a-b;
-    }).map((num,idx)=>{
-        if(idx%2==0){
-            sum+=num;
+    nums.sort(function (a, b) {
+        return a - b;
+    }).map((num, idx) => {
+        if (idx % 2 == 0) {
+            sum += num;
         }
     });
     return sum;

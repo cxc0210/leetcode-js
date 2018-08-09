@@ -25,13 +25,13 @@ Note:
  * @param {number[][]} A
  * @return {number[][]}
  */
-var transpose = function(A) {
+var transpose = function (A) {
     var result = [];
-    for(let i=0;i<A[0].length;i++) {
+    for (let i = 0; i < A[0].length; i++) {
         result.push([]);
     }
-    A.map((subArray,outIndex)=>{
-        subArray.map((item,inIndex) => {
+    A.map((subArray, outIndex) => {
+        subArray.map((item, inIndex) => {
             result[inIndex][outIndex] = item;
         });
     });
