@@ -1,3 +1,3 @@
 # leetcode-js
 leetcode exercise
-cococo
+co
